@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7FF66DEB-4FAE-4C13-945C-E9F70D4C82E0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Assignment</RootNamespace>
+    <AssemblyName>Assignment</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kickblast_Judo_Management_SystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Kickblast_Judo_Management_SystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Kickblast_Judo_Management_SystemDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Kickblast_Judo_Management_SystemDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Kickblast_Judo_Management_SystemDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Kickblast_Judo_Management_SystemDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Kickblast_Judo_Management_SystemDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Kickblast_Judo_Management_SystemDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Kickblast_Judo_Management_SystemDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Kickblast_Judo_Management_SystemDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Kickblast_Judo_Management_SystemDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Kickblast_Judo_Management_SystemDataSet.xsc">
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Kickblast_Judo_Management_SystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet.xss">
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet1.xsc">
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Kickblast_Judo_Management_SystemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet1.xss">
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet10.xsc">
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Kickblast_Judo_Management_SystemDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet10.xss">
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet2.xsc">
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Kickblast_Judo_Management_SystemDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet2.xss">
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet3.xsc">
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Kickblast_Judo_Management_SystemDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet3.xss">
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet4.xsc">
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Kickblast_Judo_Management_SystemDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet4.xss">
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet5.xsc">
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Kickblast_Judo_Management_SystemDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet5.xss">
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet6.xsc">
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Kickblast_Judo_Management_SystemDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet6.xss">
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet7.xsc">
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Kickblast_Judo_Management_SystemDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet7.xss">
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet8.xsc">
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Kickblast_Judo_Management_SystemDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet8.xss">
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet9.xsc">
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Kickblast_Judo_Management_SystemDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Kickblast_Judo_Management_SystemDataSet9.xss">
+      <DependentUpon>Kickblast_Judo_Management_SystemDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81f00dfb70ffcf40aca178076e813917.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_267369938_lUENWU9fJmeTHqqwnNVJpYtfN3pIDR1o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_267369938_lUENWU9fJmeTHqqwnNVJpYtfN3pIDR1o1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kick_last__3_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cf15bb87-7db7-4b1b-b513-ddb731dceec6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\86972869-3744-4c27-85b9-2426bdc20d0d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6681204.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password-icon-1903x2048-m0d1f305.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\291fb7c7-8a99-4893-b661-d67b75829fa7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue contacts icon.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue icons.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Lock icon.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6e41dd86-b41a-47c6-8667-6cf87b10563f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6e41dd86-b41a-47c6-8667-6cf87b10563f1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3bc54dea-9688-4b37-8574-42184dbfd95b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login  button vectors_ sign label speech login-Photoroom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login__button_vectors__sign_label_speech_login-Photoroom-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login__button_vectors__sign_label_speech_login-Photoroom-removebg-preview2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_116888225_9Wh82kihECBsbau4uCHwdrzO09hXa3zZ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4K Batman Wallpapers High Quality Free Download.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Бесплатные  звезда, погода, солнце фон картинки, небо свет пространство лед справочная информация Фото Фон PNG и векторы.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-52393.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Kickblast_Judo_Management_System.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kickblast_Judo_Management_System_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Kickblast_Judo_Management_System.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\list-menu-icons-content-view-260nw-2589536751-gigapixel-standard v2-2x.png" />
+    <None Include="Resources\100241451.png" />
+    <None Include="Resources\pngtree-vector-back-icon-png-image_1023353.jpg" />
+    <None Include="Resources\10024145.png" />
+    <None Include="Resources\judo-illustration-KHY0KD_magic1.jpeg" />
+    <None Include="Resources\c90e9f73-cfa2-4675-80be-0b88d6a9f8db.jpg" />
+    <None Include="Resources\fbd1e91a-871a-41b5-a73f-1c21e281f915.png" />
+    <None Include="Resources\0145ceff-a6bc-463a-a58c-f396688bca5f1.png" />
+    <None Include="Resources\c890338f-b34a-4594-8028-2ae9a916cff1.png" />
+    <None Include="Resources\0145ceff-a6bc-463a-a58c-f396688bca5f.png" />
+    <None Include="Resources\image_processing20220226-1450-14qeapr-removebg-preview.png" />
+    <None Include="Resources\204-2047577_view-refresh-gion-simple-update-button-logo-png-removebg-preview.png" />
+    <None Include="Resources\components-buttons-usage1-removebg-preview1.png" />
+    <None Include="Resources\components-buttons-usage1-removebg-preview.png" />
+    <None Include="Resources\png-clipart-computer-icons-android-web-search-engine-google-search-search-box-google-search-bar-blue-trademark-thumbnail.png" />
+    <None Include="Resources\bbf5d260-7486-4fb1-b421-f812d99f8df1.png" />
+    <None Include="Resources\free-search-icon-2911-thumb.png" />
+    <None Include="Resources\judo-athlete-icon-trendy-flat-style-isolated_1323048-55721-removebg-preview1.png" />
+    <None Include="Resources\judo-illustration-KHY0KD_magic.jpeg" />
+    <None Include="Resources\fit-form-young-athletes-push-up-technique-black-vector-icon-power-push-sporty-males-push-up-persist_974322-26319.png" />
+    <None Include="Resources\judo-athlete-icon-trendy-flat-style-isolated_1323048-55721-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
